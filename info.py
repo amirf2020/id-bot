@@ -1,7 +1,7 @@
-#info bot created by negative
-#info bot created by negative
-#info bot created by negative
-#info bot created by negative
+#info bot created by alfroshotak
+#info bot created by alfroshotak
+#info bot created by alfroshotak
+#info bot created by alfroshotak
 import telebot
 from telebot import types
 from telebot import util
@@ -11,7 +11,7 @@ import logging
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-bot = telebot.TeleBot("TOKEN")
+bot = telebot.TeleBot("226346511:AAFk4INuMy2ZHmfuHlINwnAq7PE2G0kEuJ8")
 
 @bot.message_handler(commands=['start', 'help'])
 def welcome(m):
@@ -37,14 +37,14 @@ def id(m):      # info menu
 def c(m):
     uid = m.chat.id
     bot.send_chat_action(uid, 'typing')
-    bot.send_contact(uid, phone_number="+989011659395", first_name="Negative")
+    bot.send_contact(uid, phone_number="+989216089692", first_name="Negative")
 
 
 @bot.message_handler(commands=['about']) # copy right Taylor Team
 def p(m):
     uid = m.chat.id
     bot.send_chat_action(uid, 'typing')
-    bot.send_message(uid, "Taylor Team development Telegram bot and web mastering \n\n developers : \n [negative](https://telegram.me/negative_officiall) \n [Parham](https://telegram.me/UnFriendlly)", parse_mode="Markdown")
+    bot.send_message(uid, "Taylor Team development Telegram bot and web mastering \n\n developers : \n [alfroshotak](https://telegram.me/alfroshotak) \n [Parham](https://telegram.me/iamrapfarsi)", parse_mode="Markdown")
     bot.send_photo(uid, open('taylor.jpg'), caption="@Taylor_Team")
 
 @bot.message_handler(commands=['idbot'])
